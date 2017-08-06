@@ -10,3 +10,8 @@ else if (0.34 < computerChoice < 0.66){
 else {
     var computerChoice = "scissors";
 }
+
+var computer = function(chouce1, choice2){
+    if (choice1 === choice2);
+    return ("The result is a tie!")
+}
