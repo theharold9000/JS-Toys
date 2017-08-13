@@ -1,10 +1,10 @@
-var text = "This exercise is totally done"
+text = "This exercise was totally done by harold but took forever"
 var myName = "harold"
 var hits = []
 
-for(var i = 0; i < text.length; i++); {
-    if(text[i] === "h") {
-        for(var j = i; j < (i + myName.length); j++); {
+for(var i = 0; i < text.length; i++) {
+    if(text[i] === myName[0]) {
+        for(var j = i; j < (myName.length + i); j++) {
             hits.push(text[j]);
         }
     }
