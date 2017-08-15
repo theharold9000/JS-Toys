@@ -7,7 +7,7 @@ while (slaying) {
     if (youHit) {
         console.log("You hit the dragon!");
         totalDamage += damageThisRound;
-        if (totalDamage <= 4){
+        if (totalDamage >= 4){
             youHit = Math.floor(Math.random()*2);
         }
     }
