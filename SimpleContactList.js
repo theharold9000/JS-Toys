@@ -1,0 +1,4 @@
+var friends = {
+    bill: {},
+    steve: {},
+};
