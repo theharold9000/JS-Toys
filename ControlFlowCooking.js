@@ -3,10 +3,29 @@ var user = answer;
 
 switch(user) {
     case 'cake':
-        console.log("That sounds like a good idea")
+        var cakeChoice = prompt("What kind of cake?").toLowerCase();
+            if (cakeChoice === "chocolate") {
+                console.log("How sweet will it be?...");
+            }
+            else {
+                console.log("It should have a filling!");
+            }
         break;
     case 'pasta':
-        console.log("What kind of sauce?")
+        var pastaSauce = prompt("Red or white sauce?").toLowerCase();
+        var pastaProtein = prompt("Seafood, beef or chicken?").toLowerCase();
+            if (pastaProtein === "seafood" && pastaSauce === ("red" || "red sauce")) {
+                console.log("Sounds like you're making marinara!");
+            }
+            else if (pastaProtein === ("beef" || "chicken") && pastaSauce === ("red" || "red sauce")) {
+                console.log("Sounds like you're making ragu!");
+            }
+            else if (pastaProtein === ("beef" || "chicken") && pastaSauce === ("white" || "white sauce")) {
+                console.log("Sounds like you're making carbonara!");
+            }
+            else {
+                console.log("Not sure about that but okay!")
+            }
         break;
     case 'steak':
         console.log("How do you want it cooked?")
