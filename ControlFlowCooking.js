@@ -28,10 +28,10 @@ switch(user) {
             }
         break;
     case 'steak':
-        console.log("How do you want it cooked?")
+        var steakCooking = prompt("How do you want it cooked?").toLowerCase();
         break;
     case 'breakfast':
-        console.log("What do you want for breakfast?")
+        var breakfastEggs = prompt("Do you want something with eggs?").toLowerCase();
         break;
     case 'sandwich':
         console.log("What do you want in the sandwich?")
