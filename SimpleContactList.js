@@ -20,13 +20,9 @@ var list = function() {
 }
 
 var search = function(name) {
-    for (var entry in object) {
+    for (var entry in friends) {
         if (friends[entry].firstName === name) {
             console.log(friends[entry]);
-            return friends[entry];
-        }
-        else {
-            console.log("No matches found");
         }
     }
 }
