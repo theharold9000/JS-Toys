@@ -45,5 +45,5 @@ function add(firstName, lastName, phoneNumber, email) {
     }
 }
 
-add("joe", "citizen", "(650) 342-5785", "joe.citizen@example.com");
+add("Joe", "Citizen", "(650) 342-5785", "joe.citizen@example.com");
 list(contacts);
