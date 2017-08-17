@@ -38,12 +38,10 @@ function search(lastName) {
 
 function add(firstName, lastName, phoneNumber, email) {
     contacts[contacts.length] = { 
-        firstName = {
-            firstName: firstName,
-            lastName: lastName,
-            phoneNumber: phoneNumber,
-            email: email,
-        }
+        firstName: firstName,
+        lastName: lastName,
+        phoneNumber: phoneNumber,
+        email: email,
     }
 }
 
