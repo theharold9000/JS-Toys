@@ -37,10 +37,12 @@ function search(lastName) {
 }
 
 function add(firstName, lastName, phoneNumber, email) {
-    var firstName = {
-        firstName = firstName,
-        lastName = lastName,
-        phoneNumber = phoneNumber,
-        email = email,
+    contacts[contacts.length] = { 
+        firstName = {
+            firstName = firstName,
+            lastName = lastName,
+            phoneNumber = phoneNumber,
+            email = email,
+        }
     }
 }
