@@ -7,7 +7,7 @@ var sally = new StaffMember("Sally",5);
 var bob = new StaffMember("Bob",10);
 
 // Create yourself again as 'me' with a staff discount of 20%
-var me 
+var me = new StaffMember("Harold",20);
 
 var cashRegister = {
     total:0,
@@ -30,7 +30,9 @@ var cashRegister = {
         this.lastTransactionAmount = 0;
     },
     // Create a new method applyStaffDiscount here
-    
+    applyStaffDiscount: function(employee){
+        this.total -= this.total * (employee.discountPercent / 100);
+    }
     
 };
 
