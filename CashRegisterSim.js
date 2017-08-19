@@ -41,7 +41,7 @@ cashRegister.scan('milk',1);
 cashRegister.scan('magazine',3);
 // Apply your staff discount by passing the 'me' object 
 // to applyStaffDiscount
-
+cashRegister.applyStaffDiscount(me);
 
 // Show the total bill
 console.log('Your bill is '+cashRegister.total.toFixed(2));
