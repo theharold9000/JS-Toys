@@ -14,17 +14,22 @@ switch(user) {
     case 'pasta':
         var pastaSauce = prompt("Red or white sauce?").toLowerCase();
         var pastaProtein = prompt("Seafood, beef or chicken?").toLowerCase();
-            if (pastaProtein === "seafood" && pastaSauce === ("red" || "red sauce")) {
+            switch(pastaProtein) {
+                case (pastaProtein === "seafood" && pastaSauce === ("red" || "red sauce")):
                 console.log("Sounds like you're making marinara!");
-            }
-            else if (pastaProtein === ("beef" || "chicken") && pastaSauce === ("red" || "red sauce")) {
+                break;
+
+                case (pastaProtein === ("beef" || "chicken") && pastaSauce === ("red" || "red sauce")):
                 console.log("Sounds like you're making ragu!");
-            }
-            else if (pastaProtein === ("beef" || "chicken") && pastaSauce === ("white" || "white sauce")) {
+                break;
+
+                case (pastaProtein === ("beef" || "chicken") && pastaSauce === ("white" || "white sauce")):
                 console.log("Sounds like you're making carbonara!");
-            }
-            else {
+                break;
+                
+                default:
                 console.log("Not sure about that but okay!")
+                break;
             }
         break;
     case 'steak':
